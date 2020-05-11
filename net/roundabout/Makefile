@@ -4,7 +4,6 @@ PKG_NAME:=roundabout
 PKG_SNAPSHOT:=66761fa
 PKG_VERSION:=0.1.4
 PKG_RELEASE:=4
-PKGARCH:=all
 
 PKG_CAT:=xzcat
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_SNAPSHOT).tar.xz
@@ -19,6 +18,7 @@ PKG_MAINTAINER:=Christian Schrötter <cs@fnx.li>
 include $(INCLUDE_DIR)/package.mk
 
 define Package/roundabout
+  PKGARCH:=all
   SECTION:=net
   CATEGORY:=Network
   SUBMENU:=Routing and Redirection
