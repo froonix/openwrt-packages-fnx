@@ -1,14 +1,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=roundabout
-PKG_SNAPSHOT:=66761fa
-PKG_VERSION:=0.1.4
-PKG_RELEASE:=4
+PKG_SNAPSHOT:=345d3d1
+PKG_VERSION:=0.2.0
+PKG_RELEASE:=1
 
 PKG_CAT:=xzcat
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_SNAPSHOT).tar.xz
 PKG_SOURCE_URL:=https://github.com/froonix/openwrt-stuff/releases/download/$(PKG_NAME)-$(PKG_VERSION)/
-PKG_HASH:=8147f3a040e5952d083e8bed99ac375b76aef9f804a53cde6bfa4485dbe5e36d
+PKG_HASH:=03ebcc91cd9e7fa18de52f2114464ffafac686eee48e245a3dcdb0e787e4e5e5
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_SNAPSHOT)
 
 PKG_MAINTAINER:=Christian Schrötter <cs@fnx.li>
@@ -33,9 +33,8 @@ This script is a helper script for the following purposes:
 * Policy-Based Routing (PBR): Setup rules and tables for source addresses.
 * LED management (routing): Enable or disable leds on default route change.
 * LED management (link layer): Enable or disable leds on ifup/ifdown.
-* OpenDNS hostname updates: Use DynDNS to update the IP addresses.
 
-There's full IPv6 support for all features! (excluding OpenDNS stuff...)
+There's full IPv6 support for all features!
 endef
 
 define Build/Configure
