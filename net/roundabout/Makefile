@@ -1,14 +1,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=roundabout
-PKG_SNAPSHOT:=345d3d1
-PKG_VERSION:=0.2.0
+PKG_SNAPSHOT:=0cfd05a
+PKG_VERSION:=0.2.1
 PKG_RELEASE:=1
 
 PKG_CAT:=xzcat
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_SNAPSHOT).tar.xz
 PKG_SOURCE_URL:=https://github.com/froonix/openwrt-stuff/releases/download/$(PKG_NAME)-$(PKG_VERSION)/
-PKG_HASH:=03ebcc91cd9e7fa18de52f2114464ffafac686eee48e245a3dcdb0e787e4e5e5
+PKG_HASH:=ca2e0880f5ad4338d2a060a73296a268068e770788358248cd9439151c80b33f
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_SNAPSHOT)
 
 PKG_MAINTAINER:=Christian Schrötter <cs@fnx.li>
