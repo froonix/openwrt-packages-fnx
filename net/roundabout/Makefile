@@ -11,7 +11,7 @@ PKG_SOURCE_URL:=https://github.com/froonix/openwrt-stuff/releases/download/$(PKG
 PKG_HASH:=ca2e0880f5ad4338d2a060a73296a268068e770788358248cd9439151c80b33f
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_SNAPSHOT)
 
-PKG_MAINTAINER:=Christian Schrötter <cs@fnx.li>
+PKG_MAINTAINER:=Christian Schroetter <cs@fnx.li>
 #PKG_LICENSE:=GPL-3.0-or-later
 #PKG_LICENSE_FILES:=LICENSE
 
